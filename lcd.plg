@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+Z:\Shared_maszyna\PROJEKT_SWB\lcd.uv2
+Project File Date:  06/10/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling wyswlcd.c...
+WYSWLCD.C(28): error C141: syntax error near 'void'
+Target not created
+Build target 'Target 1'
+compiling wyswlcd.c...
+WYSWLCD.C(111): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling wyswlcd.c...
+linking...
+*** WARNING L46: SFR SYMBOL HAS DIFFERENT VALUES
+    SYMBOL:  b
+    MODULE:  wyswlcd.obj (WYSWLCD)
+   DEFINED:  wyswlcd.obj (WYSWLCD)
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    INITCHAR/LCD
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    LCDWELCOME/LCD
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _LCD_DISPLAYSTRING/LCD
+*** WARNING L15: MULTIPLE CALL TO FUNCTION
+    NAME:    _LCD_DISPLAYROW/LCD
+    CALLER1: ISR_SERIAL/WYSWLCD
+    CALLER2: ?C_C51STARTUP
+Program Size: data=34.2 xdata=0 const=65 code=2144
+creating hex file from "lcd"...
+"lcd" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling wyswlcd.c...
+linking...
+*** WARNING L46: SFR SYMBOL HAS DIFFERENT VALUES
+    SYMBOL:  b
+    MODULE:  wyswlcd.obj (WYSWLCD)
+   DEFINED:  wyswlcd.obj (WYSWLCD)
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    INITCHAR/LCD
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    LCDWELCOME/LCD
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _LCD_DISPLAYSTRING/LCD
+Program Size: data=31.2 xdata=0 const=65 code=2087
+creating hex file from "lcd"...
+"lcd" - 0 Error(s), 4 Warning(s).

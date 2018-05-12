@@ -1,0 +1,165 @@
+C51 COMPILER V8.12   WYSWLCD                                                               06/13/2017 20:12:01 PAGE 1   
+
+
+C51 COMPILER V8.12, COMPILATION OF MODULE WYSWLCD
+OBJECT MODULE PLACED IN wyswlcd.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE wyswlcd.c OMF2 BROWSE DEBUG
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          
+   3          long int i = 0;
+   4          int b = 0;
+   5          char c;
+   6          int flagakierunku = 0;
+   7          extern w6mS();
+   8          unsigned char data Var1, Var2, Var3;
+   9          
+  10          extern void LcdInit();
+  11          extern void Lcd_DisplayCharacter(char a_char);
+  12          extern void Lcd_DisplayRow(char row, char *string);
+  13          extern void Lcd_WriteControl(unsigned char LcdCommand);
+  14          extern void Lcd_Cursor (char row, char column);
+  15          void sleep(double a){
+  16   1              for(i = 0; i<a*200; i++){}
+  17   1      }
+  18          void wyswietlInfo(){
+  19   1              while(1){
+  20   2                      if(b == 0) Lcd_DisplayRow(1,"Aquarius 2000X  ");
+  21   2                      if(b == 5) Lcd_DisplayRow(1,"Filtr: Aqua H501");
+  22   2                      if(b == 10) Lcd_DisplayRow(1,"LED: Philips 300");
+  23   2                      b++;
+  24   2                      if(b == 15) b = 0; 
+  25   2                      if(P1>32 || P1 == 0) {
+  26   3                              Lcd_DisplayRow(2,"KARMNIK STOP    ");
+  27   3                      }
+  28   2                      else if(P1>0){
+  29   3                              c = P1;
+  30   3                              Lcd_DisplayRow(2,"KARMNIK START         ");
+  31   3                              if(P1 == 1 || P1 == 32){
+  32   4                                      Lcd_Cursor(3,1);
+  33   4                                      Lcd_DisplayCharacter('+');
+  34   4                              }
+  35   3                              else if(P1 == 2 || P1 == 31){
+  36   4                                      Lcd_Cursor(3,2);
+  37   4                                      Lcd_DisplayCharacter('+');
+  38   4                              }
+  39   3                              else if(P1 == 3 || P1 == 30){
+  40   4                                      Lcd_Cursor(3,3);
+  41   4                                      Lcd_DisplayCharacter('+');
+  42   4                              }
+  43   3                              else if(P1 == 4 || P1 == 29){
+  44   4                                      Lcd_Cursor(3,4);
+  45   4                                      Lcd_DisplayCharacter('+');
+  46   4                              }
+  47   3                              else if(P1 == 5 || P1 == 28){
+  48   4                                      Lcd_Cursor(3,5);
+  49   4                                      Lcd_DisplayCharacter('+');
+  50   4                              }
+  51   3                              else if(P1 == 6 || P1 == 27){
+  52   4                                      Lcd_Cursor(3,6);
+  53   4                                      Lcd_DisplayCharacter('+');
+  54   4                              }
+  55   3                              else if(P1 == 7 || P1 == 26){
+C51 COMPILER V8.12   WYSWLCD                                                               06/13/2017 20:12:01 PAGE 2   
+
+  56   4                                      Lcd_Cursor(3,7);
+  57   4                                      Lcd_DisplayCharacter('+');
+  58   4                              }
+  59   3                              else if(P1 == 8 || P1 == 25){
+  60   4                                      Lcd_Cursor(3,8);
+  61   4                                      Lcd_DisplayCharacter('+');
+  62   4                              }
+  63   3                              else if(P1 == 9 || P1 == 24){
+  64   4                                      Lcd_Cursor(3,9);
+  65   4                                      Lcd_DisplayCharacter('+');
+  66   4                              }
+  67   3                              else if(P1 == 10 || P1 == 23){
+  68   4                                      Lcd_Cursor(3,10);
+  69   4                                      Lcd_DisplayCharacter('+');
+  70   4                              }
+  71   3                              else if(P1 == 11 || P1 == 22){
+  72   4                                      Lcd_Cursor(3,11);
+  73   4                                      Lcd_DisplayCharacter('+');
+  74   4                              }
+  75   3                              else if(P1 == 12 || P1 == 21){
+  76   4                                      Lcd_Cursor(3,12);
+  77   4                                      Lcd_DisplayCharacter('+');
+  78   4                              }
+  79   3                              else if(P1 == 13 || P1 == 20){
+  80   4                                      Lcd_Cursor(3,13);
+  81   4                                      Lcd_DisplayCharacter('+');
+  82   4                              }
+  83   3                              else if(P1 == 14 || P1 == 19){
+  84   4                                      Lcd_Cursor(3,14);
+  85   4                                      Lcd_DisplayCharacter('+');
+  86   4                              }
+  87   3                              else if(P1 == 15 || P1 == 18){
+  88   4                                      Lcd_Cursor(3,15);
+  89   4                                      Lcd_DisplayCharacter('+');
+  90   4                              }
+  91   3                              else if(P1 == 16 || P1 == 17){
+  92   4                                      Lcd_Cursor(3,16);
+  93   4                                      Lcd_DisplayCharacter('+');
+  94   4                              }
+  95   3                      }
+  96   2                      sleep(0.5);
+  97   2                      Lcd_DisplayRow(3,"----------------");
+  98   2                      Lcd_DisplayRow(4,"                ");
+  99   2              }
+ 100   1      }
+ 101          
+ 102          void ISR_serial(void)interrupt 4
+ 103          {
+ 104   1              if(TI==1) {TI=0;}
+ 105   1              if(RI==1) {
+ 106   2                      P1=SBUF;
+ 107   2                      RI=0;
+ 108   2              }
+ 109   1      }
+ 110          void Init(void)
+ 111          {       
+ 112   1              EX0 = 1; IT0 = 1;
+ 113   1              EX1 = 1; IT1 = 1;
+ 114   1              TMOD = 1;
+ 115   1              TH0 = TH1 = 0xFF;
+ 116   1              RCAP2H=TH2=0xFF;
+ 117   1              RCAP2L=TL2=0xDC;
+C51 COMPILER V8.12   WYSWLCD                                                               06/13/2017 20:12:01 PAGE 3   
+
+ 118   1              T2CON=0x30;             
+ 119   1              ES=1;
+ 120   1              SCON=0x50;
+ 121   1              TR2=1;
+ 122   1              EA=1;
+ 123   1              P3_4=0;
+ 124   1              P1 = 0;
+ 125   1      }
+ 126          void main(){
+ 127   1              LcdInit();
+ 128   1              Init();
+ 129   1              Lcd_Cursor(3,1);
+ 130   1              Lcd_WriteControl(0x0C);
+ 131   1              while(1){
+ 132   2                 wyswietlInfo();
+ 133   2              }
+ 134   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    604    ----
+   CONSTANT SIZE    =    125    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     12       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,135 @@
+C51 COMPILER V8.12   WYSW7SEG                                                              06/09/2017 12:08:09 PAGE 1   
+
+
+C51 COMPILER V8.12, COMPILATION OF MODULE WYSW7SEG
+OBJECT MODULE PLACED IN wysw7seg.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE wysw7seg.c OMF2 BROWSE DEBUG
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          unsigned char xdata Ones _at_ 0xFD00;
+   3          unsigned char xdata Tens _at_ 0xFE00;
+   4          int i=0;
+   5          int a = 0;
+   6          int b = 0;
+   7          int licznik = 0;
+   8          int krotki = 0;
+   9          int dlugi = 0;
+  10          int flaga1 = 0;
+  11          int flaga2 = 0;
+  12          int flaga3 = 0;
+  13          int zliczarka=0;
+  14          int O,T;
+  15          int onesy[] = {42,110,21,48,121,84,0,113,48,56,120,80,0};
+  16          int tensy[] = {0,42,110,21,48,121,84,0,113,48,56,120,80};
+  17          int code onestimer[] = {0,  111, 127, 7, 125, 109, 102, 79, 91, 6,  63, 111, 127, 7, 125, 109, 102, 79, 91
+             -, 6,  63, 111, 127, 7, 125, 109, 102, 79, 91, 6,  63, 0, 63};
+  18          int code tenstimer[] = {79, 91,  91,  91, 91, 91,  91,  91, 91, 91, 91, 6,    6,  6,   6,  6,   6,   6,  6
+             -,  6, 6,   0,   0,  0,  0,   0,   0,   0,  0, 0,   0, 0, 63};
+  19          void init(){
+  20   1              //int0
+  21   1              EX0 = 1;
+  22   1              IT0 = 1;
+  23   1              //int1
+  24   1              EX1 = 1;
+  25   1              IT1 = 1;
+  26   1              //Timer 0
+  27   1              ET0 = 1;
+  28   1              TR0 = 1;
+  29   1              TMOD = 0 | T0_M0_;
+  30   1              //Timer 1
+  31   1              ET1 = 1;
+  32   1              TR1 = 1;
+  33   1              TMOD = 0 | T1_M0_;
+  34   1              //enabled all
+  35   1              EA = 1;
+  36   1      }                                       
+  37          void ISR_INT0() interrupt 0{   //przycisk 
+  38   1              while(!P3_2){zliczarka++;}
+  39   1              if(zliczarka < 100){
+  40   2                      //wlacz timer karmnika
+  41   2                      if(flaga3 == 0){
+  42   3                              flaga3 = 1;
+  43   3                      }
+  44   2                      //jezeli timer karmnika dziala to go wylacz
+  45   2                      //TODO
+  46   2                      zliczarka = 0;
+  47   2              }
+  48   1              if(zliczarka > 100){
+  49   2                      //jezeli timer w tle nie dziala to go wlacz
+  50   2                      if(flaga2 == 0){
+  51   3                              flaga1 = 1;
+  52   3                      }
+  53   2                      //jezeli timer w tle dziala to go wylacz
+C51 COMPILER V8.12   WYSW7SEG                                                              06/09/2017 12:08:09 PAGE 2   
+
+  54   2                      if(flaga2 == 1){
+  55   3                              flaga1 = 0;
+  56   3                              flaga2 = 0;
+  57   3                              O = 0;
+  58   3                              T = 0;
+  59   3                              a = 0;
+  60   3                      }
+  61   2                      zliczarka = 0;
+  62   2              }
+  63   1      }
+  64          
+  65          void ISR_T0() interrupt 1{                      //TIMER 0
+  66   1                 if(flaga1 == 1){
+  67   2                              licznik++;
+  68   2                      }
+  69   1                      if(licznik == 80){
+  70   2                              flaga2 = 1;
+  71   2                              flaga1 = 0;
+  72   2                              licznik = 0;
+  73   2                      }
+  74   1      }
+  75          void ISR_T1() interrupt 3{                      //TIMER 1
+  76   1                 if(flaga2 == 1){
+  77   2                              O = onesy[a];
+  78   2                              T = tensy[a];
+  79   2                              a++;
+  80   2                              if(a == 12) a = 0;
+  81   2                 } 
+  82   1                  if(flaga3 == 1){
+  83   2                              O = onestimer[b];
+  84   2                              T = tenstimer[b];
+  85   2                              O = onestimer[b];
+  86   2                              T = tenstimer[b];
+  87   2                              b++;
+  88   2                              if(b == 32) {
+  89   3                              flaga3 = 0;
+  90   3                              b = 0;
+  91   3                              }
+  92   2                      }
+  93   1      }
+  94          
+  95          void main(){
+  96   1              init();
+  97   1              while(1){
+  98   2                       Ones = O;
+  99   2                       Tens = T;
+ 100   2      
+ 101   2              }
+ 102   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    385    ----
+   CONSTANT SIZE    =    132    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     76    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+C51 COMPILER V8.12   WYSW7SEG                                                              06/09/2017 12:08:09 PAGE 3   
+
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

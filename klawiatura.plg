@@ -1,0 +1,340 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+Z:\Shared_maszyna\PROJEKT_SWB\klawiatura.uv2
+Project File Date:  06/09/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(158): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=23.0 xdata=0 const=0 code=1098
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(158): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=23.0 xdata=0 const=0 code=1099
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(171): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1164
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(171): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1172
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(157): error C141: syntax error near '='
+KLAWIATURA.C(157): error C141: syntax error near '||'
+KLAWIATURA.C(157): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(172): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    SPRAWDZBLAD/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1236
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(172): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1231
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(173): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1158
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(173): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1155
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(157): error C213: left side of asn-op not an lvalue
+Target not created
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(157): error C213: left side of asn-op not an lvalue
+Target not created
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(168): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=25.0 xdata=0 const=0 code=1135
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(173): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=27.0 xdata=0 const=0 code=1180
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(39): error C202: 'flaga2': undefined identifier
+KLAWIATURA.C(46): error C202: 'flaga2': undefined identifier
+KLAWIATURA.C(53): error C202: 'flaga2': undefined identifier
+KLAWIATURA.C(163): error C202: 'flaga2': undefined identifier
+KLAWIATURA.C(168): error C202: 'flaga2': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(163): warning C276: constant in condition expression
+KLAWIATURA.C(180): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1213
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(163): warning C276: constant in condition expression
+KLAWIATURA.C(181): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1213
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(163): warning C276: constant in condition expression
+KLAWIATURA.C(181): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1187
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(172): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1154
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(162): error C141: syntax error near '='
+KLAWIATURA.C(162): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(176): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1186
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(176): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    SPRAWDZBLAD/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1181
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(177): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    SPRAWDZBLAD/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1183
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(174): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1180
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(175): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1187
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(177): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1198
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(170): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1198
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(172): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    SPRAWDZBLAD/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1151
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling klawiatura.c...
+KLAWIATURA.C(165): warning C206: 'init': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED FUNCTION, IGNORED FOR OVERLAY PROCESS
+    NAME:    _SLEEP/KLAWIATURA
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  init
+    MODULE:  klawiatura.obj (KLAWIATURA)
+   DEFINED:  klawiatura.obj (KLAWIATURA)
+Program Size: data=29.0 xdata=0 const=0 code=1134
+creating hex file from "klawiatura"...
+"klawiatura" - 0 Error(s), 3 Warning(s).
